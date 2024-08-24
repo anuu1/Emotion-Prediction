@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='main.css') }}">
+    <title>Emotion Prediction</title>
+
+</head>
+<body>
+    <h1>Emotion Prediction</h1>
+    <div >
+        <form action="/predict" method="post">
+            <label for="textInput">Enter Text:</label>
+            <input type="text" id="textInput" name="textInput" required>
+            <br><br>
+            <input type="submit" value="Predict Emotion" id="predict">
+        </form>
+    </div>
+   
+</body>
+</html>
